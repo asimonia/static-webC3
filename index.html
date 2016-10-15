@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge #3</title>
+	<style>
+		div.angrytext {
+		 font-size:70px;
+		 font-weight:bold;
+		 color:#4794D3;
+		 width:300px;
+		 margin:90px auto;
+
+		 -webkit-animation: jump 1.5s ease 0s infinite normal ;
+		 animation: jump 1.5s ease 0s infinite normal ;
+		}
+
+		@-webkit-keyframes jump {
+		 0%{
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		 }
+		 20%{
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		 }
+		 40%{
+			-webkit-transform: translateY(-30px);
+			transform: translateY(-30px);
+		 }
+		 50%{
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		 }
+		 60%{
+			-webkit-transform: translateY(-15px);
+			transform: translateY(-15px);
+		 }
+		 80%{
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		 }
+		 100%{
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		 }
+		}
+
+		@keyframes jump {
+		 0%{
+			transform: translateY(0);
+		 }
+		 20%{
+			transform: translateY(0);
+		 }
+		 40%{
+			transform: translateY(-30px);
+		 }
+		 50%{
+			transform: translateY(0);
+		 }
+		 60%{
+			transform: translateY(-15px);
+		 }
+		 80%{
+			transform: translateY(0);
+		 }
+		 100%{
+			transform: translateY(0);
+		 }
+		}
+		
+		/* Fixed navbar */
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: pink;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			padding: 16px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#sweet">Sweet</a></li>
+		<li><a href="#excellent">Excellent</a></li>
+		<li><a href="#nice">Nice</a></li>
+		<li><a href="#rad">Rad</a></li>
+	</ul>
+
+	<div class="angrytext"> Home </div>
+	<div class="angrytext"> Sweet </div>
+	<div class="angrytext"> Excellent </div>
+	<div class="angrytext"> Nice </div>
+	<div class="angrytext" id="rad"> Rad </div>
+
+</body>
+</html>
